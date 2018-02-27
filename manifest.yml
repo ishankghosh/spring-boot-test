@@ -1,0 +1,10 @@
+declared-services: 
+  sample-java-cloudant-cloudantNoSQLDB:
+    label: cloudantNoSQLDB 
+    plan: Lite 
+applications:
+- name: sample-java-cloudant
+  random-route: true
+  memory: 192M
+  services:
+  - sample-java-cloudant-cloudantNoSQLDB
